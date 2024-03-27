@@ -21,6 +21,7 @@ interface PricingProps {
   price: number;
   description: string;
   buttonText: string;
+  buttonUrl: string;
   benefitList: string[];
 }
 
@@ -32,6 +33,7 @@ const pricingList: PricingProps[] = [
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Get Started",
+    buttonUrl: "https://cal.com/kklickstudio/budget-klick",
     benefitList: [
       "1 Team member",
       "2 GB Storage",
@@ -47,6 +49,7 @@ const pricingList: PricingProps[] = [
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Start Free Trial",
+    buttonUrl: "https://cal.com/kklickstudio/klick1",
     benefitList: [
       "4 Team member",
       "4 GB Storage",
@@ -62,6 +65,23 @@ const pricingList: PricingProps[] = [
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Contact US",
+    buttonUrl: "https://cal.com/kklickstudio/budget-klick",
+    benefitList: [
+      "10 Team member",
+      "8 GB Storage",
+      "Upto 10 pages",
+      "Priority support",
+      "lorem ipsum dolor",
+    ],
+  },
+  {
+    title: "Enterprise",
+    popular: 0,
+    price: 40,
+    description:
+      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+    buttonText: "Contact US",
+    buttonUrl: "https://cal.com/kklickstudio/budget-klick",
     benefitList: [
       "10 Team member",
       "8 GB Storage",
@@ -75,16 +95,16 @@ const pricingList: PricingProps[] = [
 export const Pricing = () => {
   return (
     <section
-      id="pricing"
+      id="packages"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Our
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Packages &{" "}
         </span>
-        Access
+        Add-ons
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -121,7 +141,12 @@ export const Pricing = () => {
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              
+              <a href={pricing.buttonUrl} target="_blank">
+              <Button className="w-full">{pricing.buttonText}
+              </Button>
+              </a>
+      
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

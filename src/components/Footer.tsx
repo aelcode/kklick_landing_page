@@ -12,7 +12,7 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            KKlick Studio
           </a>
         </div>
 
@@ -139,13 +139,13 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; 2024 KKlick Studio by{" "}
           <a
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="https://github.com/aelcode"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            Lunaxcode
           </a>
         </h3>
       </section>
