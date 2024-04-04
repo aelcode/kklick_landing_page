@@ -1,13 +1,13 @@
-import { buttonVariants } from '@/components/ui/button';
+// import { buttonVariants } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+// import { Facebook, Instagram, Linkedin } from 'lucide-react';
 import remluna from '../assets/team-rem-luna.webp';
 import erickluna from '../assets/team-erick-luna.webp';
 import christine from '../assets/team-joy-agapay.webp';
