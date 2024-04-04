@@ -25,16 +25,20 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: '#features',
-    label: 'Features',
+    href: '#ourstory',
+    label: 'Our Story',
+  },
+  {
+    href: '#packages',
+    label: 'Packages',
   },
   {
     href: '#testimonials',
     label: 'Reviews',
   },
   {
-    href: '#packages',
-    label: 'Packages',
+    href: '#team',
+    label: 'Meet The Team',
   },
   {
     href: '#faq',
@@ -50,8 +54,8 @@ export const Navbar = () => {
         <NavigationMenuList className='container h-14 px-4 w-screen flex justify-between '>
           <NavigationMenuItem className='font-bold flex'>
             <a href='/' className='ml-2 font-bold text-xl flex'>
-              <LogoIcon />
-              KKlick
+              {/* <LogoIcon /> */}
+              KKlick Studio
             </a>
           </NavigationMenuItem>
 
@@ -86,7 +90,7 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
-                  <a
+                  {/* <a
                     href='https://github.com/leoMirandaa/shadcn-landing-page.git'
                     target='_blank'
                     className={`w-[110px] border ${buttonVariants({
@@ -95,7 +99,7 @@ export const Navbar = () => {
                   >
                     <GitHubLogoIcon className='mr-2 w-5 h-5' />
                     Github
-                  </a>
+                  </a> */}
                 </nav>
               </SheetContent>
             </Sheet>

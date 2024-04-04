@@ -25,14 +25,14 @@ function App() {
       {/* <TrailGallery /> */}
       {/* <Sponsors /> */}
       <About />
-      <HowItWorks />
-      <Features />
-      <Services />
-      <Cta />
+      {/* <HowItWorks /> */}
+      {/* <Features /> */}
+      {/* <Services /> */}
+      {/* <Cta /> */}
       <Testimonials />
-      <Team />
       <Pricing />
-      <Newsletter />
+      <Team />
+      {/* <Newsletter /> */}
       <FAQ />
       <Footer />
       <ScrollToTop />

@@ -48,7 +48,7 @@ const testimonials: TestimonialProps[] = [
     name: 'John Doe React',
     userName: '@john_Doe4',
     comment:
-      'Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
   },
   {
     image: 'https://github.com/shadcn.png',
@@ -72,8 +72,7 @@ export const Testimonials = () => {
       </h2>
 
       <p className='text-xl text-muted-foreground pt-4 pb-8'>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        The smiles say it all. Check out our reviews!
       </p>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6'>
