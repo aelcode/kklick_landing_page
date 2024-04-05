@@ -6,7 +6,12 @@ import {
   // CardHeader,
   // CardTitle,
 } from '@/components/ui/card';
-
+import review01 from '../assets/reviews/cx-review-01.webp';
+import review02 from '../assets/reviews/cx-review-02.webp';
+import review03 from '../assets/reviews/cx-review-03.webp';
+import review04 from '../assets/reviews/cx-review-04.webp';
+import review05 from '../assets/reviews/cx-review-05.webp';
+import review06 from '../assets/reviews/cx-review-06.webp';
 interface TestimonialProps {
   image: string;
   name: string;
@@ -16,14 +21,14 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: '/src/assets/reviews/cx-review-01.webp',
+    image: review01,
     name: 'John Doe React',
     userName: '@john_Doe',
     comment:
       "Hi. Thankyou po. Ang ganda po ng experience namin sa studio. Super accommodating nung staff kanina. Sobrang hands on and he checked us din if we're okay since may kasama kaming toddler and newborn. Definitely will come back",
   },
   {
-    image: '/src/assets/reviews/cx-review-02.webp',
+    image: review02,
     name: 'John Doe React',
     userName: '@john_Doe1',
     comment:
@@ -31,27 +36,27 @@ const testimonials: TestimonialProps[] = [
   },
 
   {
-    image: '/src/assets/reviews/cx-review-03.webp',
+    image: review03,
     name: 'John Doe React',
     userName: '@john_Doe2',
     comment:
       'Thank you so much K Klick Self Photo Studio, very satisfied shots and surely come back again to take a capture for my special day',
   },
   {
-    image: '/src/assets/reviews/cx-review-04.webp',
+    image: review04,
     name: 'John Doe React',
     userName: '@john_Doe3',
     comment: 'Very accommodating ung staff and worth it din ung bayad.',
   },
   {
-    image: '/src/assets/reviews/cx-review-05.webp',
+    image: review05,
     name: 'John Doe React',
     userName: '@john_Doe4',
     comment:
       'thankyou po super duper accomodating po yung staff and sulit na sulit po yung binayad namen',
   },
   {
-    image: '/src/assets/reviews/cx-review-06.webp',
+    image: review06,
     name: 'John Doe React',
     userName: '@john_Doe5',
     comment:

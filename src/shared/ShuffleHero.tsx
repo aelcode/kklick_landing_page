@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
+import slide_remluna from '../assets/team-rem-luna.webp';
+import slide_erickluna from '../assets/team-erick-luna.webp';
+import slide_christine from '../assets/team-joy-agapay.webp';
+import slide_mark from '../assets/team-kiko-agapay.webp';
+import slide_jehu from '../assets/team-jehu.webp';
 
 const ShuffleHero = () => {
   return (
@@ -58,23 +63,23 @@ const shuffle = (array: (typeof squareData)[0][]) => {
 const squareData = [
   {
     id: 1,
-    src: '/src/assets/team-erick-luna.webp',
+    src: slide_erickluna,
   },
   {
     id: 2,
-    src: '/src/assets/team-rem-luna.webp',
+    src: slide_remluna,
   },
   {
     id: 3,
-    src: '/src/assets/team-joy-agapay.webp',
+    src: slide_christine,
   },
   {
     id: 4,
-    src: '/src/assets/team-kiko-agapay.webp',
+    src: slide_mark,
   },
   {
     id: 5,
-    src: '/src/assets/team-jehu.webp',
+    src: slide_jehu,
   },
   {
     id: 6,
