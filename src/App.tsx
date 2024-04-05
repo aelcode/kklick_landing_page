@@ -17,7 +17,7 @@ import { Testimonials } from './components/Testimonials';
 import './App.css';
 import ShuffleHero from './shared/ShuffleHero';
 import { AddonsDiscount } from './components/AddonsDiscount';
-import { SwipeCarousel } from './shared/SwipeCarousel';
+// import { SwipeCarousel } from './shared/SwipeCarousel';
 
 function App() {
   return (

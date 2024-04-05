@@ -1,16 +1,11 @@
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+// import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
+  // CardDescription,
+  // CardHeader,
+  // CardTitle,
 } from '@/components/ui/card';
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from '@/components/ui/hover-card';
 
 interface TestimonialProps {
   image: string;
@@ -81,13 +76,12 @@ export const Testimonials = () => {
       </p>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6'>
-        {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
-            <Card
-              key={userName}
-              className='max-w-md md:break-inside-avoid overflow-hidden'
-            >
-              {/* <CardHeader className='flex flex-row items-center gap-4 pb-2'>
+        {testimonials.map(({ image, userName, comment }: TestimonialProps) => (
+          <Card
+            key={userName}
+            className='max-w-md md:break-inside-avoid overflow-hidden'
+          >
+            {/* <CardHeader className='flex flex-row items-center gap-4 pb-2'>
                 <Avatar>
                   <AvatarImage alt='' src={image} />
                   <AvatarFallback>OM</AvatarFallback>
@@ -99,17 +93,16 @@ export const Testimonials = () => {
                 </div>
               </CardHeader> */}
 
-              <CardContent>
-                <img
-                  src={image}
-                  alt='Portrait'
-                  className='w-full h-auto object-cover mt-5 mb-4'
-                />
-                {comment}
-              </CardContent>
-            </Card>
-          )
-        )}
+            <CardContent>
+              <img
+                src={image}
+                alt='Portrait'
+                className='w-full h-auto object-cover mt-5 mb-4'
+              />
+              {comment}
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );
