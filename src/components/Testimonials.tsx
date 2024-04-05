@@ -6,6 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card';
 
 interface TestimonialProps {
   image: string;
@@ -16,46 +21,46 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-01.webp',
     name: 'John Doe React',
     userName: '@john_Doe',
-    comment: 'This landing page is awesome!',
+    comment:
+      "Hi. Thankyou po. Ang ganda po ng experience namin sa studio. Super accommodating nung staff kanina. Sobrang hands on and he checked us din if we're okay since may kasama kaming toddler and newborn. Definitely will come back",
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-02.webp',
     name: 'John Doe React',
     userName: '@john_Doe1',
     comment:
-      'Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+      'Thank you K Klick Self Photo Studio, we had a very nice and smooth experience earlier. We would like to commend your staff for being nice and accomodating. The staff helped us and attend to our queries. We definitely enjoyed the experience in K Klick! For sure, babalik po kami C Maraming salamaat poooo!',
   },
 
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-03.webp',
     name: 'John Doe React',
     userName: '@john_Doe2',
     comment:
-      'Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+      'Thank you so much K Klick Self Photo Studio, very satisfied shots and surely come back again to take a capture for my special day',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-04.webp',
     name: 'John Doe React',
     userName: '@john_Doe3',
-    comment:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    comment: 'Very accommodating ung staff and worth it din ung bayad.',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-05.webp',
     name: 'John Doe React',
     userName: '@john_Doe4',
     comment:
-      'Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
+      'thankyou po super duper accomodating po yung staff and sulit na sulit po yung binayad namen',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: '/src/assets/reviews/cx-review-06.webp',
     name: 'John Doe React',
     userName: '@john_Doe5',
     comment:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Their staff is very kind. They even let you familiarize the studio before they start the countdown to paid minutes. Worth the price',
   },
 ];
 
@@ -82,7 +87,7 @@ export const Testimonials = () => {
               key={userName}
               className='max-w-md md:break-inside-avoid overflow-hidden'
             >
-              <CardHeader className='flex flex-row items-center gap-4 pb-2'>
+              {/* <CardHeader className='flex flex-row items-center gap-4 pb-2'>
                 <Avatar>
                   <AvatarImage alt='' src={image} />
                   <AvatarFallback>OM</AvatarFallback>
@@ -92,9 +97,16 @@ export const Testimonials = () => {
                   <CardTitle className='text-lg'>{name}</CardTitle>
                   <CardDescription>{userName}</CardDescription>
                 </div>
-              </CardHeader>
+              </CardHeader> */}
 
-              <CardContent>{comment}</CardContent>
+              <CardContent>
+                <img
+                  src={image}
+                  alt='Portrait'
+                  className='w-full h-auto object-cover mt-5 mb-4'
+                />
+                {comment}
+              </CardContent>
             </Card>
           )
         )}

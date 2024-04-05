@@ -16,6 +16,8 @@ import { Testimonials } from './components/Testimonials';
 // import { TrailGallery } from './shared/MouseImageTrail';
 import './App.css';
 import ShuffleHero from './shared/ShuffleHero';
+import { AddonsDiscount } from './components/AddonsDiscount';
+import { SwipeCarousel } from './shared/SwipeCarousel';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
       {/* <Services /> */}
       {/* <Cta /> */}
       <Testimonials />
+      {/* <SwipeCarousel /> */}
       <Pricing />
+      <AddonsDiscount />
       <Team />
       {/* <Newsletter /> */}
       <FAQ />

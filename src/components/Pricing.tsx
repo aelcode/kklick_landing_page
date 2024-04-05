@@ -27,10 +27,10 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: 'Budget Klick',
+    title: 'Budget Klick (For Students Only)',
     popular: 0,
     price: 250,
-    description: 'Available only for students.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
     benefitList: [
@@ -48,7 +48,7 @@ const pricingList: PricingProps[] = [
     title: 'Klick 1',
     popular: 1,
     price: 450,
-    description: 'Klick 1 is the most popular package for everyone.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/klick1',
     benefitList: [
@@ -66,7 +66,7 @@ const pricingList: PricingProps[] = [
     title: 'Klick 2',
     popular: 0,
     price: 650,
-    description: 'Klick 2 is the most popular package for everyone.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
     benefitList: [
@@ -84,8 +84,7 @@ const pricingList: PricingProps[] = [
     title: 'Klick 3',
     popular: 0,
     price: 850,
-    description:
-      'Klick 3 is the most popular package for everyone. This is the best package for family photoshoots.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
     benefitList: [
@@ -103,8 +102,7 @@ const pricingList: PricingProps[] = [
     title: 'Klick 4',
     popular: 0,
     price: 1050,
-    description:
-      'Klick 4 is the most popular package for everyone. This is the best package for family photoshoots.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
     benefitList: [
@@ -122,8 +120,7 @@ const pricingList: PricingProps[] = [
     title: 'Klick Squad',
     popular: 0,
     price: 1550,
-    description:
-      'Klick Squad is the most popular package for everyone. This is the best package for family photoshoots.',
+    description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
     benefitList: [
@@ -135,6 +132,27 @@ const pricingList: PricingProps[] = [
       'Free use of available props',
       '3 Backdrops',
       'All soft copies (No Edit)',
+    ],
+  },
+  {
+    title: 'Studio Rental (2 Hours Minimum)',
+    popular: 0,
+    price: 750,
+    description: 'Package Inclusions:',
+    buttonText: 'Book Now',
+    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    benefitList: [
+      'Studio Space',
+      '4 Backdrops (Color: Pink, Grey, Beige and White)',
+      '2 Solo wood stool',
+      '2 White boxes',
+      '3 White nordic chair',
+      'Free use of available props',
+      'Dressing room with big mirror',
+      'Body mirror',
+      '4 Steps black ladder',
+      'Fully Airconditioned',
+      'Equipment: Godox 2 X SL100 D Continues light (Round Soft Box and Square Soft Box)',
     ],
   },
 ];
@@ -151,11 +169,6 @@ export const Pricing = () => {
       </h2>
       <h3 className='text-xl text-center text-muted-foreground pt-4 pb-8'>
         Choose the package that suits your needs and budget.
-        <br />
-        <span>
-          We offer 6 flexible packages designed for solo sessions, couples,
-          friends, and larger groups.
-        </span>
       </h3>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {pricingList.map((pricing: PricingProps) => (
@@ -164,7 +177,7 @@ export const Pricing = () => {
             className={
               pricing.popular === PopularPlanType.YES
                 ? 'drop-shadow-xl shadow-black/10 dark:shadow-white/10'
-                : ''
+                : 'hover:drop-shadow-xl shadow-black/10 dark:shadow-white/10'
             }
           >
             <CardHeader>
@@ -181,19 +194,22 @@ export const Pricing = () => {
                 {/* <span className='text-muted-foreground'> /month</span> */}
               </div>
 
-              <CardDescription>{pricing.description}</CardDescription>
+              {/* <CardDescription>{pricing.description}</CardDescription> */}
             </CardHeader>
 
             <CardContent>
               <a href={pricing.buttonUrl} target='_blank'>
-                <Button className='w-full'>{pricing.buttonText}</Button>
+                <Button className='w-full mb-4'>{pricing.buttonText}</Button>
               </a>
+              <CardDescription className='text-bold'>
+                {pricing.description}
+              </CardDescription>
             </CardContent>
 
             <hr className='w-4/5 m-auto mb-4' />
 
             <CardFooter className='flex'>
-              <div className='space-y-4'>
+              <div className='space-y-2 text-sm'>
                 {pricing.benefitList.map((benefit: string) => (
                   <span key={benefit} className='flex'>
                     <Check className='text-green-500' />{' '}

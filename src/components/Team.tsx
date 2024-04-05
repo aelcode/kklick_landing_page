@@ -33,7 +33,7 @@ const teamList: TeamProps[] = [
     name: 'Remelyn Luna',
     position: 'CEO/Founder',
     motto:
-      'A heart full of love, a spirit filled with faith, and the courage to chase your dreams.',
+      'Commit to the LORD whatever you do, and he will establish your plans. -Proverbs 16:3',
     // socialNetworks: [
     //   { name: 'Linkedin', url: 'http://linkedin.com' },
     //   {
@@ -51,7 +51,7 @@ const teamList: TeamProps[] = [
     name: 'Erick Luna',
     position: 'CEO/Founder/Developer',
     motto:
-      "Faith is taking the first step, even when you can't see the whole staircase.",
+      'But seek first his kingdom and his righteousness, and all these things will be given to you as well. -Matthew 6:33',
     // socialNetworks: [
     //   { name: 'Linkedin', url: 'http://linkedin.com' },
     //   {
@@ -69,7 +69,7 @@ const teamList: TeamProps[] = [
     name: 'Christine Joy Agapay',
     position: 'CEO/Founder',
     motto:
-      "Don't be afraid of your fears. They're there to let you know that something is worth it.",
+      'For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future. -Jeremiah 29:11',
     // socialNetworks: [
     //   { name: 'Linkedin', url: 'http://linkedin.com' },
 
@@ -83,7 +83,8 @@ const teamList: TeamProps[] = [
     imageUrl: mark,
     name: 'Mark Francis Agapay',
     position: 'CEO/Founder/Support',
-    motto: "Life isn't about finding yourself, it's about creating yourself.",
+    motto:
+      'My flesh and my heart may fail, but God is the strength of my heart and my portion forever. -Psalm 73:26',
     // socialNetworks: [
     //   { name: 'Linkedin', url: 'http://linkedin.com' },
     //   {
@@ -96,7 +97,8 @@ const teamList: TeamProps[] = [
     imageUrl: jehu,
     name: 'Jehu Moring Jaim',
     position: 'Office Admin/Staff',
-    motto: 'Your only limit is the one you set in your mind.',
+    motto:
+      'But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth. -Acts 1:8',
     // socialNetworks: [
     //   { name: 'Linkedin', url: 'http://linkedin.com' },
     //   {
@@ -123,19 +125,19 @@ export const Team = () => {
 
   return (
     <section id='team' className='container py-24 sm:py-32'>
-      <h2 className='text-3xl md:text-4xl font-bold text-center'>
+      <h2 className='text-3xl md:text-4xl font-bold mb-12 text-center'>
         <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
           Our Dedicated{' '}
         </span>
         Team
       </h2>
 
-      <p className='mt-4 mb-10 text-center text-xl text-muted-foreground'>
+      {/* <p className='mt-4 mb-10 text-center text-xl text-muted-foreground'>
         The Masterminds Behind the Magic We're a crew of photo-loving,
         fun-seeking professionals. <br />
         Our mission? To help you unleash your inner superstar and capture
         moments you'll cherish forever.
-      </p>
+      </p> */}
 
       <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10'>
         {teamList.map(({ imageUrl, name, position, motto }: TeamProps) => (
@@ -156,8 +158,7 @@ export const Team = () => {
             </CardHeader>
 
             <CardContent className='text-center pb-2'>
-              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
-              {motto}
+              <p className='text-sm'>{motto}</p>
             </CardContent>
 
             {/* <CardFooter>

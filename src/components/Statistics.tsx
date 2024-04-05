@@ -10,7 +10,7 @@ export const Statistics = () => {
       description: 'Facebook',
     },
     {
-      quantity: '318+',
+      quantity: '320+',
       description: 'Instagram',
     },
     {
@@ -18,7 +18,7 @@ export const Statistics = () => {
       description: 'Customers',
     },
     {
-      quantity: '6',
+      quantity: '7',
       description: 'Packages',
     },
   ];
