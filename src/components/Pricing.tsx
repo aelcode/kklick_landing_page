@@ -32,7 +32,7 @@ const pricingList: PricingProps[] = [
     price: 250,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/budgetklick',
     benefitList: [
       '1-2 Pax',
       '7 Mins Photoshoot (Unlimited Shots)',
@@ -50,7 +50,7 @@ const pricingList: PricingProps[] = [
     price: 450,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/klick1',
+    buttonUrl: 'https://cal.com/kklick/klick1',
     benefitList: [
       '1 - 2 Pax',
       '12 Mins Photoshoot (Unlimited Shots)',
@@ -68,7 +68,7 @@ const pricingList: PricingProps[] = [
     price: 650,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/klick2',
     benefitList: [
       '1 - 2 Pax',
       '20 Mins Photoshoot (Unlimited Shots)',
@@ -86,7 +86,7 @@ const pricingList: PricingProps[] = [
     price: 850,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/klick3',
     benefitList: [
       '1 - 4 Pax',
       '30 Mins Photoshoot (Unlimited Shots)',
@@ -104,7 +104,7 @@ const pricingList: PricingProps[] = [
     price: 1050,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/klick4',
     benefitList: [
       '1 - 6 Pax',
       '35 Mins Photoshoot (Unlimited Shots)',
@@ -122,7 +122,7 @@ const pricingList: PricingProps[] = [
     price: 1550,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/klick-squad',
     benefitList: [
       '1 - 10 Pax',
       '45 Mins Photoshoot (Unlimited Shots)',
@@ -140,7 +140,7 @@ const pricingList: PricingProps[] = [
     price: 750,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
-    buttonUrl: 'https://cal.com/kklickstudio/budget-klick',
+    buttonUrl: 'https://cal.com/kklick/studio-rental',
     benefitList: [
       'Studio Space',
       '4 Backdrops (Color: Pink, Grey, Beige and White)',

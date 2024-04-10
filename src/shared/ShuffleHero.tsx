@@ -1,11 +1,22 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import slide_remluna from '../assets/team-rem-luna.webp';
-import slide_erickluna from '../assets/team-erick-luna.webp';
-import slide_christine from '../assets/team-joy-agapay.webp';
-import slide_mark from '../assets/team-kiko-agapay.webp';
-import slide_jehu from '../assets/team-jehu.webp';
+import slider_01 from '../assets/sliders/slider_01.webp';
+import slider_02 from '../assets/sliders/slider_02.webp';
+import slider_03 from '../assets/sliders/slider_03.webp';
+import slider_04 from '../assets/sliders/slider_04.webp';
+import slider_05 from '../assets/sliders/slider_05.webp';
+import slider_06 from '../assets/sliders/slider_06.webp';
+import slider_07 from '../assets/sliders/slider_07.webp';
+import slider_08 from '../assets/sliders/slider_08.webp';
+import slider_09 from '../assets/sliders/slider_09.webp';
+import slider_10 from '../assets/sliders/slider_10.webp';
+import slider_11 from '../assets/sliders/slider_11.webp';
+import slider_12 from '../assets/sliders/slider_12.webp';
+import slider_13 from '../assets/sliders/slider_13.webp';
+import slider_14 from '../assets/sliders/slider_14.webp';
+import slider_15 from '../assets/sliders/slider_15.webp';
+import slider_16 from '../assets/sliders/slider_16.webp';
 
 const ShuffleHero = () => {
   return (
@@ -63,67 +74,67 @@ const shuffle = (array: (typeof squareData)[0][]) => {
 const squareData = [
   {
     id: 1,
-    src: slide_erickluna,
+    src: slider_01,
   },
   {
     id: 2,
-    src: slide_remluna,
+    src: slider_02,
   },
   {
     id: 3,
-    src: slide_christine,
+    src: slider_03,
   },
   {
     id: 4,
-    src: slide_mark,
+    src: slider_04,
   },
   {
     id: 5,
-    src: slide_jehu,
+    src: slider_05,
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: slider_06,
   },
   {
     id: 7,
-    src: 'https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: slider_07,
   },
   {
     id: 8,
-    src: 'https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: slider_08,
   },
   {
     id: 9,
-    src: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+    src: slider_09,
   },
   {
     id: 10,
-    src: 'https://images.unsplash.com/photo-1610768764270-790fbec18178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    src: slider_10,
   },
   {
     id: 11,
-    src: 'https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=684&q=80',
+    src: slider_11,
   },
   {
     id: 12,
-    src: 'https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80',
+    src: slider_12,
   },
   {
     id: 13,
-    src: 'https://images.unsplash.com/photo-1560089000-7433a4ebbd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+    src: slider_13,
   },
   {
     id: 14,
-    src: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+    src: slider_14,
   },
   {
     id: 15,
-    src: 'https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80',
+    src: slider_15,
   },
   {
     id: 16,
-    src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80',
+    src: slider_16,
   },
 ];
 

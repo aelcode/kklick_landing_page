@@ -32,10 +32,10 @@ const routeList: RouteProps[] = [
     href: '#packages',
     label: 'Packages',
   },
-  {
-    href: '#addons',
-    label: 'Add-ons & Discounts',
-  },
+  // {
+  //   href: '#addons',
+  //   label: 'Add-ons & Discounts',
+  // },
   {
     href: '#testimonials',
     label: 'Reviews',
