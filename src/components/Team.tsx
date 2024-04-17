@@ -96,7 +96,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: jehu,
     name: 'Jehu Moring Jaim',
-    position: 'Office Admin/Staff',
+    position: 'Operation/Admin Staff',
     motto:
       'But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth. -Acts 1:8',
     // socialNetworks: [

@@ -139,7 +139,7 @@ export const FAQ = () => {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      <h3 className='font-medium mt-4'>
+      {/* <h3 className='font-medium mt-4'>
         Still have questions?{' '}
         <a
           href='#'
@@ -147,7 +147,7 @@ export const FAQ = () => {
         >
           Contact us
         </a>
-      </h3>
+      </h3> */}
     </section>
   );
 };

@@ -35,9 +35,9 @@ function App() {
       {/* <SwipeCarousel /> */}
       <Pricing />
       {/* <AddonsDiscount /> */}
+      <FAQ />
       <Team />
       {/* <Newsletter /> */}
-      <FAQ />
       <Footer />
       <ScrollToTop />
     </>

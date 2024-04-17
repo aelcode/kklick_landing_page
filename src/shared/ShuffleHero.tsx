@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/xbutton';
 import slider_01 from '../assets/sliders/slider_01.webp';
 import slider_02 from '../assets/sliders/slider_02.webp';
 import slider_03 from '../assets/sliders/slider_03.webp';
@@ -18,6 +18,8 @@ import slider_14 from '../assets/sliders/slider_14.webp';
 import slider_15 from '../assets/sliders/slider_15.webp';
 import slider_16 from '../assets/sliders/slider_16.webp';
 
+// The ShuffleHero component is the main component for the landing page.
+// It includes a text section and a grid of images that shuffle every 3 seconds.
 const ShuffleHero = () => {
   return (
     <section className='w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto'>
@@ -39,6 +41,7 @@ const ShuffleHero = () => {
           Find a class
         </button> */}
         <Button
+          variant='ringHover'
           className='mt-4'
           onClick={() =>
             document
@@ -55,22 +58,19 @@ const ShuffleHero = () => {
 };
 
 const shuffle = (array: (typeof squareData)[0][]) => {
-  let currentIndex = array.length,
-    randomIndex;
+  // Start from the last element and work our way backwards
+  for (let i = array.length - 1; i > 0; i--) {
+    // Generate a random index between 0 and i (inclusive)
+    const randomIndex = Math.floor(Math.random() * (i + 1));
 
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
+    // Swap the current element with the randomly selected element
+    [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
   }
 
   return array;
 };
 
+// The squareData array contains the data for the images that are displayed in the grid.
 const squareData = [
   {
     id: 1,
@@ -138,6 +138,7 @@ const squareData = [
   },
 ];
 
+// The generateSquares function generates the squares that are displayed in the grid.
 const generateSquares = () => {
   return shuffle(squareData).map((sq) => (
     <motion.div
@@ -153,16 +154,19 @@ const generateSquares = () => {
   ));
 };
 
+// The ShuffleGrid component is the grid of images that shuffle every 3 seconds.
 const ShuffleGrid = () => {
   const timeoutRef = useRef<any>(null);
   const [squares, setSquares] = useState(generateSquares());
 
+  // The useEffect hook is used to set up a timer that calls the shuffleSquares function every 3 seconds.
   useEffect(() => {
     shuffleSquares();
 
     return () => clearTimeout(timeoutRef.current);
   }, []);
 
+  // The shuffleSquares function shuffles the order of the squares and sets the squares state to the new array.
   const shuffleSquares = () => {
     setSquares(generateSquares());
 

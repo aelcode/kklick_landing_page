@@ -1,5 +1,7 @@
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/xbutton';
+import { BudgetKlick } from './shared/BudgetKlick';
+import { KlickOne } from './shared/Klick1';
 import {
   Card,
   CardContent,
@@ -8,7 +10,18 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { Check } from 'lucide-react';
+import React from 'react';
+import ModalBudget from './modals/ModalBudget';
+import { KlickTwo } from './shared/KlickTwo';
+import { KlickThree } from './shared/KlickThree';
+import { OtherKlick } from './shared/OtherKlick';
 
 enum PopularPlanType {
   NO = 0,
@@ -23,6 +36,8 @@ interface PricingProps {
   buttonText: string;
   buttonUrl: string;
   benefitList: string[];
+  sampleImage: React.ReactNode;
+  bookModal: React.ReactNode;
 }
 
 const pricingList: PricingProps[] = [
@@ -43,6 +58,8 @@ const pricingList: PricingProps[] = [
       '1 Backdrop',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <BudgetKlick />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Klick 1',
@@ -61,6 +78,8 @@ const pricingList: PricingProps[] = [
       '1 Backdrop',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <KlickOne />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Klick 2',
@@ -79,6 +98,8 @@ const pricingList: PricingProps[] = [
       '2 Backdrops',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <KlickTwo />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Klick 3',
@@ -97,6 +118,8 @@ const pricingList: PricingProps[] = [
       '2 Backdrops',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <KlickThree />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Klick 4',
@@ -115,6 +138,8 @@ const pricingList: PricingProps[] = [
       '3 Backdrops',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <OtherKlick />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Klick Squad',
@@ -133,6 +158,8 @@ const pricingList: PricingProps[] = [
       '3 Backdrops',
       'All soft copies (No Edit)',
     ],
+    sampleImage: <OtherKlick />,
+    bookModal: <ModalBudget />,
   },
   {
     title: 'Studio Rental (2 Hours Minimum)',
@@ -154,6 +181,25 @@ const pricingList: PricingProps[] = [
       'Fully Airconditioned',
       'Equipment: Godox 2 X SL100 D Continues light (Round Soft Box and Square Soft Box)',
     ],
+    sampleImage: '',
+    bookModal: <ModalBudget />,
+  },
+  {
+    title: 'Birthday Theme Props',
+    popular: 0,
+    price: 999,
+    description: 'Package Inclusions:',
+    buttonText: 'Book Now',
+    buttonUrl: 'https://cal.com/kklick/baby-theme-props-php999',
+    benefitList: [
+      '25 Minute Photoshoot (Unlimited Shots)',
+      '5 Mins Photo Selection for Printed copy',
+      'Complete with 4R & 8R prints (8R prints with a frame included).',
+      'Choose from captivating themes like Baby Bear, Safari, and Car Themes.',
+      'All soft copies (No Edit)',
+    ],
+    sampleImage: '',
+    bookModal: <ModalBudget />,
   },
 ];
 
@@ -198,11 +244,26 @@ export const Pricing = () => {
             </CardHeader>
 
             <CardContent>
+              {/* <Button variant='gooeyRight' className='w-full mb-4'>
+                {pricing.bookModal}
+              </Button> */}
               <a href={pricing.buttonUrl} target='_blank'>
-                <Button className='w-full mb-4'>{pricing.buttonText}</Button>
+                <Button variant='gooeyRight' className='w-full mb-4'>
+                  {pricing.buttonText}
+                </Button>
               </a>
-              <CardDescription className='text-bold'>
+              <CardDescription className='text-bold align-middle justify-center'>
                 {pricing.description}
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <span className='ml-2'>{pricing.sampleImage}</span>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>View Print Layout</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </CardDescription>
             </CardContent>
 
