@@ -32,9 +32,9 @@ export function KlickTwo() {
             <DrawerDescription>Type: Postcard | Strips</DrawerDescription>
           </DrawerHeader>
           <div className='p-4 pb-0'>
-            <div className='flex items-center justify-center space-x-2'>
-              <img src={Postcard} alt='postcard' />
-              <img src={Strip} alt='strip' />
+            <div className='flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-2'>
+              <img src={Postcard} alt='postcard' height='50%' width='50%' />
+              <img src={Strip} alt='strip' height='50%' width='50%' />
             </div>
           </div>
           <DrawerFooter>

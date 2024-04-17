@@ -111,31 +111,66 @@ export const FAQ = () => {
         </AccordionItem>
         <AccordionItem value='item-3'>
           <AccordionTrigger>Mode of Payment?</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className='leading-6'>
             For online booking we accept payment through Gcash. For walk-in we
             accept cash and Gcash.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value='item-4'>
           <AccordionTrigger>Do you accept walk-ins?</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className='leading-6'>
             Yes. We welcome walk-in customers. However, we recommend that you
             contact us beforehand to allow us to advise you on the available
-            time slots. This is to ensure that you do not have to wait
-            excessively in case the schedule is fully booked. Therefore, we
-            strongly recommend that you make an appointment to secure your
-            preferred date and time.
+            time slots. <br />
+            This is to ensure that you do not have to wait excessively in case
+            the schedule is fully booked. <br />
+            Therefore, we strongly recommend that you make an appointment to
+            secure your preferred date and time.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value='item-5'>
           <AccordionTrigger>Do you accept pets?</AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className='leading-6'>
             Yes. We are a pet-friendly studio. We are delighted to welcome your
             furry companions and accommodate photo sessions at our studio.
             However, we kindly request that you, as responsible pet owners,
             ensure your pets wear diapers and are on a leash while inside the
             studio. Additionally, please keep a close eye on your pets to
             prevent any inconvenience.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value='item-6'>
+          <AccordionTrigger>
+            What is your terms and conditions for Baby Theme Props?
+          </AccordionTrigger>
+          <AccordionContent className='leading-6'>
+            <ol>
+              <li>
+                <strong>1. Non-refundable Down Payment:</strong> A
+                non-refundable down payment of 500 pesos is required to secure
+                your booking.
+              </li>
+              <li>
+                <strong>2. Rescheduling Policy:</strong> One-time rescheduling
+                is allowed, provided it is done at least two days before the
+                scheduled time.
+              </li>
+              <li>
+                <strong>3. Participants Inclusion:</strong> The photoshoot
+                package includes participation for one celebrant and up to two
+                companions only.
+              </li>
+              <li>
+                <strong>4. Late Time Deductions:</strong> Late arrival will
+                result in deductions from the 25-minute session duration.
+              </li>
+              <li>
+                <strong>5. Forfeiture of Bookings:</strong> Failure to attend
+                the rescheduled date will result in the forfeiture of the
+                booking and down payment. By booking a theme props photoshoot at
+                K Klick, you agree to these terms and conditions.
+              </li>
+            </ol>
           </AccordionContent>
         </AccordionItem>
       </Accordion>
