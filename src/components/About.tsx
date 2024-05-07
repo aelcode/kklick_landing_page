@@ -21,9 +21,9 @@ export const About = () => {
             <div className='pb-6'>
               <h2 className='text-3xl md:text-4xl font-bold'>
                 <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
-                  Our{' '}
+                  About{' '}
                 </span>
-                Story
+                Us!
               </h2>
               <p className='text-lg text-muted-foreground mt-4'>
                 K Klick is a Korean-inspired self-photo studio that helps
