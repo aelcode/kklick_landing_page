@@ -12,6 +12,12 @@ import review03 from '../assets/reviews/cx-review-03.webp';
 import review04 from '../assets/reviews/cx-review-04.webp';
 import review05 from '../assets/reviews/cx-review-05.webp';
 import review06 from '../assets/reviews/cx-review-06.webp';
+import review07 from '../assets/reviews/cx-review-07.webp';
+import review08 from '../assets/reviews/cx-review-08.webp';
+import review09 from '../assets/reviews/cx-review-09.webp';
+import review10 from '../assets/reviews/cx-review-10.webp';
+import review11 from '../assets/reviews/cx-review-11.webp';
+
 interface TestimonialProps {
   image: string;
   name: string;
@@ -61,6 +67,41 @@ const testimonials: TestimonialProps[] = [
     userName: '@john_Doe5',
     comment:
       'Their staff is very kind. They even let you familiarize the studio before they start the countdown to paid minutes. Worth the price',
+  },
+  {
+    image: review07,
+    name: 'John Doe React',
+    userName: '@john_Doe5',
+    comment:
+        'Thank you K Klick! Siguradong babalik at babalik kami hehehe next time dala na yung loyalty card',
+  },
+  {
+    image: review08,
+    name: 'John Doe React',
+    userName: '@john_Doe5',
+    comment:
+        'Pretty Baby loves Thank you for making her birthday special.Worth it for recommendations',
+  },
+  {
+    image: review09,
+    name: 'John Doe React',
+    userName: '@john_Doe5',
+    comment:
+        'Book your appointment now!! best experience and super affordable',
+  },
+  {
+    image: review10,
+    name: 'John Doe React',
+    userName: '@john_Doe5',
+    comment:
+        'Highly recommended!',
+  },
+  {
+    image: review11,
+    name: 'John Doe React',
+    userName: '@john_Doe5',
+    comment:
+        'Thankyouuu rin po! Ang ganda po ng studio niyo pati po yung mga picture.',
   },
 ];
 

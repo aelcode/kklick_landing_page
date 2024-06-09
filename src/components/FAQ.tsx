@@ -100,6 +100,8 @@ export const FAQ = () => {
               <li>Klick 4 - 400.00</li>
               <li>Klick Squad - 500.00</li>
               <li>STUDIO RENT: 50%</li>
+              <li>GRADUATION: 200.00</li>
+              <li>BDAY THEMES: 500.00</li>
             </ol>
             Please select the package you want to avail in the{' '}
             <a href='#packages'>
