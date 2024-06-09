@@ -164,7 +164,7 @@ const pricingList: PricingProps[] = [
   {
     title: 'Studio Rental (2 Hours Minimum)',
     popular: 0,
-    price: 750,
+    price: 700,
     description: 'Package Inclusions:',
     buttonText: 'Book Now',
     buttonUrl: 'https://cal.com/kklick/studio-rental',
