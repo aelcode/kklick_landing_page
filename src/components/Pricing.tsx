@@ -201,6 +201,25 @@ const pricingList: PricingProps[] = [
     sampleImage: '',
     bookModal: <ModalBudget />,
   },
+  {
+    title: 'Graduation Package Promo',
+    popular: 0,
+    price: 599,
+    description: 'Package Inclusions:',
+    buttonText: 'Book Now',
+    buttonUrl: 'https://cal.com/kklick/graduation-package-promo-php599',
+    benefitList: [
+      '25 minutes of unlimited shots',
+      '5 minutes Photo Selection for Printed copy',
+      'Free 4R print take home physical copies of your best shots.',
+      '+8R print (you will received it after a week).',
+      'Good for 1 person: Focus on yourself and shine on your graduation day',
+      '1 Backdrop',
+      'All soft copies (No Edit)',
+    ],
+    sampleImage: '',
+    bookModal: <ModalBudget />,
+  },
 ];
 
 export const Pricing = () => {
