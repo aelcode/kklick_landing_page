@@ -26,10 +26,10 @@ export const About = () => {
                 Us!
               </h2>
               <p className="text-lg text-muted-foreground mt-4">
-                K Click is a Korean-inspired self-photo studio that helps
+                K Klick is a Korean-inspired self-photo studio that helps
                 camera-shy individuals capture stunning photos with ease. <br />
                 <br />
-                At K Click, we provide a relaxed atmosphere where you can snap
+                At K Klick, we provide a relaxed atmosphere where you can snap
                 amazing shots at your own pace. Our studio is equipped with
                 everything you need, including a camera, remote control, and
                 instant display monitor for immediate results. <br />
