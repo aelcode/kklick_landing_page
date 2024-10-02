@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex flex-row justify-between max-[767px]:flex-col max-[767px]:items-start">
           <div className="w-full max-w-[560px] max-[991px]:mr-4 max-[991px]:flex-initial max-[767px]:mr-0">
             <h2 className="text-3xl font-semibold text-white md:text-5xl">
-              <span className="text-[#bf805e]">K Klick Self Photo</span> Make
+              <span className="text-[#bf805e]">K Click Self Photo</span> Make
               Memories In Every Click
             </h2>
             <div className="mb-12 mt-12 grid w-full max-w-[208px] grid-flow-col grid-cols-4 gap-3">
