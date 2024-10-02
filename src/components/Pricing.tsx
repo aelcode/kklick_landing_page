@@ -42,7 +42,7 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: 'Budget Klick (For Students Only)',
+    title: 'Budget Click (For Students Only)',
     popular: 0,
     price: 250,
     description: 'Package Inclusions:',
@@ -62,7 +62,7 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
-    title: 'Klick 1',
+    title: 'Click 1',
     popular: 1,
     price: 450,
     description: 'Package Inclusions:',
@@ -82,7 +82,7 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
-    title: 'Klick 2',
+    title: 'Click 2',
     popular: 0,
     price: 650,
     description: 'Package Inclusions:',
@@ -102,7 +102,7 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
-    title: 'Klick 3',
+    title: 'Click 3',
     popular: 0,
     price: 850,
     description: 'Package Inclusions:',
@@ -122,7 +122,7 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
-    title: 'Klick 4',
+    title: 'Click 4',
     popular: 0,
     price: 1050,
     description: 'Package Inclusions:',
@@ -142,7 +142,7 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
-    title: 'Klick Squad',
+    title: 'Click Squad',
     popular: 0,
     price: 1550,
     description: 'Package Inclusions:',
