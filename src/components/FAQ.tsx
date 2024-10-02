@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
+} from "@/components/ui/accordion";
 
 // interface FAQProps {
 //   question: string;
@@ -46,10 +46,10 @@ import {
 
 export const FAQ = () => {
   return (
-    <section id='faq' className='container py-24 sm:py-32'>
-      <h2 className='text-3xl md:text-4xl font-bold mb-4'>
-        Frequently Asked{' '}
-        <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
+    <section id="faq" className="container py-24 sm:py-32">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Frequently Asked{" "}
+        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           Questions
         </span>
       </h2>
@@ -68,59 +68,59 @@ export const FAQ = () => {
           </AccordionItem>
         ))}
       </Accordion> */}
-      <Accordion type='single' collapsible className='w-full'>
-        <AccordionItem value='item-1'>
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="item-1">
           <AccordionTrigger>Where are you located?</AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             We are located at 3rd floor Collective Properties Inc Maylor's Plaza
             Brgy San Roque Antipolo (Beside Puregold Circumferential and
             opposite Shopwise). <br />
-            Click this{' '}
+            Click this{" "}
             <a
-              href='https://maps.app.goo.gl/bNdgtM3nyVk6aH6j9'
-              target='_blank'
-              rel='noreferrer'
+              href="https://maps.app.goo.gl/bNdgtM3nyVk6aH6j9"
+              target="_blank"
+              rel="noreferrer"
             >
               <strong>Googe Map Link</strong>
-            </a>{' '}
+            </a>{" "}
             for exact location.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value='item-2'>
+        <AccordionItem value="item-2">
           <AccordionTrigger>How to make a reservation?</AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             When making a reservation, please pay a down payment.
             <br />
             <br /> Downpayment as follows: <br />
             <ol>
-              <li>Budget Klick - 50.00</li>
-              <li>Klick 1 - 100.00</li>
-              <li>Klick 2 - 200.00</li>
-              <li>Klick 3 - 300.00</li>
-              <li>Klick 4 - 400.00</li>
-              <li>Klick Squad - 500.00</li>
+              <li>Budget Click - 50.00</li>
+              <li>Click 1 - 100.00</li>
+              <li>Click 2 - 200.00</li>
+              <li>Click 3 - 300.00</li>
+              <li>Click 4 - 400.00</li>
+              <li>Click Squad - 500.00</li>
               <li>STUDIO RENT: 50%</li>
               <li>GRADUATION: 200.00</li>
               <li>BDAY THEMES: 500.00</li>
             </ol>
-            Please select the package you want to avail in the{' '}
-            <a href='#packages'>
+            Please select the package you want to avail in the{" "}
+            <a href="#packages">
               <strong>package</strong>
-            </a>{' '}
+            </a>{" "}
             section and click book now button. Payment will be sent thru our
             GCASH 09620869332.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value='item-3'>
+        <AccordionItem value="item-3">
           <AccordionTrigger>Mode of Payment?</AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             For online booking we accept payment through Gcash. For walk-in we
             accept cash and Gcash.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value='item-4'>
+        <AccordionItem value="item-4">
           <AccordionTrigger>Do you accept walk-ins?</AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             Yes. We welcome walk-in customers. However, we recommend that you
             contact us beforehand to allow us to advise you on the available
             time slots. <br />
@@ -130,9 +130,9 @@ export const FAQ = () => {
             secure your preferred date and time.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value='item-5'>
+        <AccordionItem value="item-5">
           <AccordionTrigger>Do you accept pets?</AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             Yes. We are a pet-friendly studio. We are delighted to welcome your
             furry companions and accommodate photo sessions at our studio.
             However, we kindly request that you, as responsible pet owners,
@@ -141,11 +141,11 @@ export const FAQ = () => {
             prevent any inconvenience.
           </AccordionContent>
         </AccordionItem>
-        <AccordionItem value='item-6'>
+        <AccordionItem value="item-6">
           <AccordionTrigger>
             What is your terms and conditions for Baby Theme Props?
           </AccordionTrigger>
-          <AccordionContent className='leading-6'>
+          <AccordionContent className="leading-6">
             <ol>
               <li>
                 <strong>1. Non-refundable Down Payment:</strong> A
