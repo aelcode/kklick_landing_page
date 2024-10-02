@@ -2,30 +2,30 @@ import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from '@/components/ui/hover-card';
+} from "@/components/ui/hover-card";
 
-import { Statistics } from './Statistics';
-import kklick from '../assets/kklick-logo.png';
+import { Statistics } from "./Statistics";
+import kklick from "../assets/kclick_logo.png";
 
 export const About = () => {
   return (
-    <section id='ourstory' className='container py-24 sm:py-32'>
-      <div className='bg-muted/50 border rounded-lg py-12'>
-        <div className='px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12'>
+    <section id="ourstory" className="container py-24 sm:py-32">
+      <div className="bg-muted/50 border rounded-lg py-12">
+        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={kklick}
-            alt=''
-            className='w-[300px] object-contain rounded-lg'
+            alt=""
+            className="w-[300px] object-contain rounded-lg"
           />
-          <div className='bg-green-0 flex flex-col justify-between'>
-            <div className='pb-6'>
-              <h2 className='text-3xl md:text-4xl font-bold'>
-                <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
-                  About{' '}
+          <div className="bg-green-0 flex flex-col justify-between">
+            <div className="pb-6">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+                  About{" "}
                 </span>
                 Us!
               </h2>
-              <p className='text-lg text-muted-foreground mt-4'>
+              <p className="text-lg text-muted-foreground mt-4">
                 K Klick is a Korean-inspired self-photo studio that helps
                 camera-shy individuals capture stunning photos with ease. <br />
                 <br />
@@ -40,8 +40,8 @@ export const About = () => {
                 We also offer FREE use of
                 <HoverCard>
                   <HoverCardTrigger>
-                    {' '}
-                    <strong>available props</strong>{' '}
+                    {" "}
+                    <strong>available props</strong>{" "}
                   </HoverCardTrigger>
                   <HoverCardContent>
                     Available Free Props: <br />
