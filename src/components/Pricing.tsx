@@ -287,6 +287,23 @@ const pricingList: PricingProps[] = [
     bookModal: <ModalBudget />,
   },
   {
+    title: "Birthday Theme - Candy Land",
+    popular: 0,
+    price: 999,
+    description: "Package Inclusions:",
+    buttonText: "Book Now",
+    buttonUrl: "https://cal.com/kklick/baby-theme-candy-land-php999-dp500",
+    benefitList: [
+      "25 Minute Photoshoot (Unlimited Shots)",
+      "5 Mins Photo Selection for Printed copy",
+      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Themes: Cars.",
+      "All soft copies (No Edit)",
+    ],
+    sampleImage: "",
+    bookModal: <ModalBudget />,
+  },
+  {
     title: "Graduation Package Promo",
     popular: 0,
     price: 599,
