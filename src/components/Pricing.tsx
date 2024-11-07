@@ -190,7 +190,7 @@ const pricingList: PricingProps[] = [
     price: 999,
     description: "Package Inclusions:",
     buttonText: "Book Now",
-    buttonUrl: "https://cal.com/kklick/baby-theme-props-php999",
+    buttonUrl: "https://cal.com/kklick/baby-theme-props-fashion-php999",
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
