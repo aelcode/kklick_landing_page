@@ -194,7 +194,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Fashion.",
       "All soft copies (No Edit)",
     ],
@@ -211,7 +211,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Princess.",
       "All soft copies (No Edit)",
     ],
@@ -228,7 +228,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Prince.",
       "All soft copies (No Edit)",
     ],
@@ -245,7 +245,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Baby Bear.",
       "All soft copies (No Edit)",
     ],
@@ -262,7 +262,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Safari.",
       "All soft copies (No Edit)",
     ],
@@ -279,7 +279,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Cars.",
       "All soft copies (No Edit)",
     ],
@@ -296,7 +296,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       "25 Minute Photoshoot (Unlimited Shots)",
       "5 Mins Photo Selection for Printed copy",
-      "Complete with 4R & 8R prints (8R prints with a frame included).",
+      "Complete with 4R & 8R prints.",
       "Themes: Cars.",
       "All soft copies (No Edit)",
     ],
