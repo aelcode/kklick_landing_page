@@ -356,7 +356,7 @@ const pricingList: PricingProps[] = [
       "5 minutes Photo Selection for Printed copy",
       "Free 4R print take home physical copies of your best shots.",
       "+8R print (you will received it after a week).",
-      "2 backdrop",
+      "Choice of 1 backdrop",
       "All soft copies (No Edit)",
     ],
     sampleImage: "",
