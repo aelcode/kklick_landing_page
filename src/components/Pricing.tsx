@@ -49,7 +49,9 @@ const pricingList: PricingProps[] = [
     buttonText: "Book Now",
     buttonUrl: "https://cal.com/kklick/budgetklick",
     benefitList: [
-      "1-2 Pax",
+      "1 Pax",
+      "Requires Valid School ID",
+      "Not valid for 2 years old and below",
       "7 Mins Photoshoot (Unlimited Shots)",
       "3 Mins Photo Selection for Printed copy",
       "1 pc Printed Copy (Minor Enhancement)",
