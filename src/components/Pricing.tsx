@@ -182,8 +182,6 @@ const pricingList: PricingProps[] = [
       "4 Steps black ladder",
       "Fully Airconditioned",
       "Equipment: Godox 2 X SL100 D Continues light (Round Soft Box and Square Soft Box)",
-      "Camera Rental",
-      "Professional Photographer Rental",
     ],
     sampleImage: "",
     bookModal: <ModalBudget />,
