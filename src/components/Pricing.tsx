@@ -172,6 +172,7 @@ const pricingList: PricingProps[] = [
     buttonUrl: "https://cal.com/kklick/studio-rental",
     benefitList: [
       "Studio Space",
+      "1 - 10 Pax",
       "4 Backdrops (Color: Pink, Grey, Beige, White and Red)",
       "2 Solo wood stool",
       "2 White boxes",
