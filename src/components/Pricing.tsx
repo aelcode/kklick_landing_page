@@ -306,6 +306,23 @@ const pricingList: PricingProps[] = [
     sampleImage: "",
     bookModal: <ModalBudget />,
   },
+    {
+    title: "Birthday Theme - Basketball",
+    popular: 0,
+    price: 999,
+    description: "Package Inclusions:",
+    buttonText: "Book Now",
+    buttonUrl: "https://cal.com/kklick/baby-theme-basketball-php999-dp500",
+    benefitList: [
+      "25 Minute Photoshoot (Unlimited Shots)",
+      "5 Mins Photo Selection for Printed copy",
+      "Complete with 4R & 8R prints.",
+      "Themes: Basketball.",
+      "All soft copies (No Edit)",
+    ],
+    sampleImage: "",
+    bookModal: <ModalBudget />,
+  },
   {
     title: "Graduation Package Promo",
     popular: 0,
