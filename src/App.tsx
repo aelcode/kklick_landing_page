@@ -18,6 +18,7 @@ import "./App.css";
 import ShuffleHero from "./shared/ShuffleHero";
 // import { AddonsDiscount } from './components/AddonsDiscount';
 // import { SwipeCarousel } from './shared/SwipeCarousel';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       {/* <Newsletter /> */}
       <Footer />
       <ScrollToTop />
+      <SpeedInsights />
     </>
   );
 }
