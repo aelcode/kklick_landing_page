@@ -42,6 +42,42 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
+    title: "Christmas Package - Click Mas 1",
+    popular: 0,
+    price: 1299,
+    description: "Package Inclusions:",
+    buttonText: "Book Now",
+    buttonUrl: "https://cal.com/kklick/christmas-click-1-php1299-dp500",
+    benefitList: [
+      "1 - 4 Pax Only",
+      "25 Minutes Unlimited Shots",
+      "5 Mins Photo Selection for Printed copy",
+      "Complete with 4R & 8R prints.",
+      "1 Backdrop",
+      "All soft copies (No Edit)",
+    ],
+    sampleImage: "",
+    bookModal: <ModalBudget />,
+  },
+  {
+    title: "Christmas Package - Click Mas 2",
+    popular: 0,
+    price: 1699,
+    description: "Package Inclusions:",
+    buttonText: "Book Now",
+    buttonUrl: "https://cal.com/kklick/christmas-click-2-php1699-dp600",
+    benefitList: [
+      "1 - 8 Pax Only",
+      "25 Minutes Unlimited Shots",
+      "5 Mins Photo Selection for Printed copy",
+      "Complete with 4R & 8R prints.",
+      "1 Backdrop",
+      "All soft copies (No Edit)",
+    ],
+    sampleImage: "",
+    bookModal: <ModalBudget />,
+  },
+  {
     title: "Budget Click (For Students Only)",
     popular: 0,
     price: 250,
@@ -377,7 +413,7 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">Php{pricing.price}</span>
+                <span className="text-3xl font-bold">Php {pricing.price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
                 {/* <span className='text-muted-foreground'> /month</span> */}
               </div>
 
